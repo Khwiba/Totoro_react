@@ -1,0 +1,60 @@
+.container {
+    background-color: whitesmoke;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: auto;
+}
+
+.logo img {
+    display: block;
+    /* 이미지를 블록 요소로 설정하여 가운데 정렬하기 위해 */
+    margin: auto;
+    /* 가운데 정렬 */
+}
+
+.menubar{
+    justify-content: space-between;
+    /* 가로 중앙 정렬 */
+    margin: auto;
+    width: 80%;
+}
+
+.videoarea{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    margin: auto;
+}
+
+.video{
+    position: absolute;
+    z-index: 2;
+    transition-duration: 0.5s;
+    opacity: 0;
+    width: 70%;
+    height: 100%;
+}
+
+.video:hover {
+    opacity: 1;
+}
+
+.videocover{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 70%;
+    height: 100%;
+}

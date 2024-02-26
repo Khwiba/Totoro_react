@@ -1,15 +1,13 @@
-import Container from '@mui/material/Container';
-import { BrowserRouter as Routes, Route } from "react-router-dom";
-import styles from "./Totoro.module.css";
+
+import { Routes, Route } from "react-router-dom";
 import Main from "../Main/Main";
 
 const Totoro = () => {
     return (
-        <Container className={styles.Container} fluid>
-            <Container className={styles.MainContainer} fluid>
-                <Routes>
-                    <Route path="/" element={<Main />} />
-                    {/* <Route path="Feed/*" element={<Feed />} />
+
+        <Routes>
+            <Route path="/" element={<Main />} />
+            {/* <Route path="Feed/*" element={<Feed />} />
                     <Route path="Library/*" element={<Library />} />
                     <Route path="Playlist/*" element={<Playlist />} />
                     <Route path="Profile/:targetID/*" element={<Mypage />} />
@@ -25,9 +23,7 @@ const Totoro = () => {
                     <Route path="ShowMusicList/:searchText/*" element={<ShowMusicList />} />
                     <Route path="QnA/*" element={<QnaList />} />
                     <Route path="Dashboard/*" element={<DashBoardMain />} /> */}
-                </Routes>
-            </Container>
-        </Container>
+        </Routes>
     );
 };
 
